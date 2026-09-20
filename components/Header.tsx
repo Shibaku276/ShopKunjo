@@ -2,6 +2,9 @@ import React from 'react'
 import Container from './Container'
 import Logo from './Logo'
 import HeaderMenu from './HeaderMenu'
+import SearchBar from './SearchBar'
+import CartIcon from './CartIcon'
+import FavouriteButton from './FavouriteButton'
 
 const Header = () => {
   return (
@@ -11,7 +14,12 @@ const Header = () => {
         <Logo />
         <HeaderMenu />
 
-        <div>Others</div>
+        <div className= "w-auto md:w-1/3 flex items-center justify-end gap-5">
+          <SearchBar />
+          <CartIcon />
+          <FavouriteButton />
+
+        </div>
         {/* NavAdmin */}
 
 
