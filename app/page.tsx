@@ -73,15 +73,13 @@ export default function Home() {
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import HomeBanner from "@/components/HomeBanner";
 
 
 const Home = () => {
   return (
     <Container className = "bg-shop_light_pink"> 
-      <h2 className = "text-xl font-semibold"> Home </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <Button variant= "destructive"> Check Out  </Button>
+      <HomeBanner />
     </Container>
   );
 };
